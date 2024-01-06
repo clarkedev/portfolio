@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/style.css" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Primary Meta Tags -->
     <title>Portfolio - William Clarke </title>
@@ -28,8 +29,9 @@
 
     <!-- Meta Tags Generated with https://metatags.io -->
 </head>
-<body>
+<body class="bg-offwhite dark:bg-[#1C2122]">
     <main> 
+        <button aria-hidden="true" onclick="toggleDarkMode()"></button> <!-- Either function or event listener -- Toggles 'dark' class on the html element -->
         <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
 
             <!-- 
@@ -37,13 +39,48 @@
                 - Experience
                 - Skills
                 - About me
+
+
+
+                Enable dark mode via a button with some js 
+
              -->
 
 
-            <div id="about-me">
-                <a href="#about-me">
-                    <h1>Hi, I'm Will!</h1>
-                </a>
+            <div id="about-me" class="grid grid-cols-2">
+                <div class="p-4">
+                    <a href="#about-me">
+                        <h1 class="text-4xl font-semibold leading-8 dark:text-offwhite">👋 Hi, I'm Will!</h1>
+                    </a>
+                    <div>
+                        <p class="leading-6 text-lg mt-4 dark:text-offwhite">I have a keen interest in tinkering with bits of code and exploring new and exciting technology to expand my knowledge. My skills tend to lie within the lines of WordPress and PHP development but I'm happy to learn new things.</p>
+
+                        <div class="mt-8">
+                            <p class="text-offwhite text-sm font-semibold leading-6">MORE ABOUT ME...</p>
+                            <p class="leading-6 text-lg mt-4 text-offwhite">
+                                In my free time I enjoy working out at the gym, listening to music and spending time with my family. I enjoy occasionally visiting the beach and really enjoy long drives in my car.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="justify-self-center p-4">
+                    <img class="max-w[300px] max-h-[300px] object-cover rounded" src="./dist/me.png">
+                    <ul class="flex flex-col space-y-4 mt-4">
+                        <li class="w-fit">
+                            <a class="items-center flex flex-row space-x-2 group" href="https://github.com/clarkedev" target="_blank">
+                                <i class="text-steel text-4xl fab fa-github"></i>
+                                <p class="group-hover:underline underline-offset-4 text-base text-offwhite">Github</p>
+                            </a>
+                        </li>
+                        <li class="w-fit">
+                            <a class="items-center flex flex-row space-x-2 group" href="https://www.linkedin.com/in/william-clarke-0a4657231/" target="_blank">
+                                <i class="text-steel text-4xl fab fa-linkedin"></i>
+                                <p class="group-hover:underline underline-offset-4 text-base text-offwhite">LinkedIn</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div id="my-skills"></div>
