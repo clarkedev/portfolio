@@ -559,20 +559,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .block {
@@ -605,10 +601,6 @@ video {
   width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -620,12 +612,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.appearance-auto {
-  -webkit-appearance: auto;
-     -moz-appearance: auto;
-          appearance: auto;
 }
 
 .grid-cols-2 {
@@ -761,15 +747,9 @@ video {
   text-underline-offset: 4px;
 }
 
-/* progress[value]::-webkit-progress-bar,
-progress::-moz-progress-bar {
-    background-color: #EBEBEB;
-
+[x-cloak] {
+  display: none !important;
 }
-progress[value]::-webkit-progress-bar {
-    background: rgb(62,124,177);
-    background: radial-gradient(circle, rgba(62,124,177,1) 61%, rgba(120,163,200,1) 100%);
-} */
 
 .group:hover .group-hover\:text-lightsteel {
   --tw-text-opacity: 1;
@@ -802,11 +782,6 @@ progress[value]::-webkit-progress-bar {
   }
 }
 
-.\[\&\:\:-moz-progress-bar\]\:bg-steel::-moz-progress-bar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 124 177 / var(--tw-bg-opacity));
-}
-
 .\[\&\:\:-moz-progress-bar\]\:bg-gradient-to-r::-moz-progress-bar {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -825,11 +800,6 @@ progress[value]::-webkit-progress-bar {
   border-radius: 0.5rem;
 }
 
-.\[\&\:\:-webkit-progress-bar\]\:bg-steel::-webkit-progress-bar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 124 177 / var(--tw-bg-opacity));
-}
-
 .\[\&\:\:-webkit-progress-bar\]\:bg-offwhite::-webkit-progress-bar {
   --tw-bg-opacity: 1;
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
@@ -837,16 +807,6 @@ progress[value]::-webkit-progress-bar {
 
 .\[\&\:\:-webkit-progress-value\]\:rounded-lg::-webkit-progress-value {
   border-radius: 0.5rem;
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-offwhite::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 235 235 / var(--tw-bg-opacity));
-}
-
-.\[\&\:\:-webkit-progress-value\]\:bg-steel::-webkit-progress-value {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 124 177 / var(--tw-bg-opacity));
 }
 
 .\[\&\:\:-webkit-progress-value\]\:bg-gradient-to-r::-webkit-progress-value {
