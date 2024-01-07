@@ -9,7 +9,8 @@ module.exports = {
     colors: {
       'gunmetal': "#293132",
       'offwhite': "#EBEBEB",
-      'steel': "#3E7CB1"
+      'steel': "#3E7CB1",
+      'lightsteel': '#78A3C8'
     }
   },
   plugins: [],
